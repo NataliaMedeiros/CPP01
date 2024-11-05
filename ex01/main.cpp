@@ -5,20 +5,20 @@
 /*                                                     +:+                    */
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/11/04 14:48:18 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 18:26:30 by natalia       ########   odam.nl         */
+/*   Created: 2024/11/04 18:40:21 by natalia       #+#    #+#                 */
+/*   Updated: 2024/11/04 18:42:33 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Zombie.cpp"
 
-int	main()
+int	main(void)
 {
-	Zombie*		heapZombie;
+	int		size = 10;
+	Zombie* horde = zombieHorde(size, "Horde");
 
-	randomChump("Chump");
-	heapZombie = newZombie("heap");
-	heapZombie->Announce();
-	delete	heapZombie;
+	for(int i = 0; i < size; i++)
+		horde[i].Announce();
+	delete[] horde;
 	return (0);
 }

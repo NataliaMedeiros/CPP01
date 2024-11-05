@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   randomChump.cpp                                    :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/11/04 14:48:18 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 18:26:30 by natalia       ########   odam.nl         */
+/*   Created: 2024/11/04 18:23:37 by natalia       #+#    #+#                 */
+/*   Updated: 2024/11/04 18:24:01 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main()
+void	randomChump(std::string name)
 {
-	Zombie*		heapZombie;
+	Zombie	chump = Zombie(name);
 
-	randomChump("Chump");
-	heapZombie = newZombie("heap");
-	heapZombie->Announce();
-	delete	heapZombie;
-	return (0);
+	chump.Announce();
 }

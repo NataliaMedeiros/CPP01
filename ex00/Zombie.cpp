@@ -6,20 +6,21 @@
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/04 14:40:01 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 14:55:18 by natalia       ########   odam.nl         */
+/*   Updated: 2024/11/04 18:24:31 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie()
+Zombie::Zombie(std::string name)
 {
-	this->name = "";
+	this->name = name;
+	std::cout << name << " had been constructed" << std::endl;
 }
 
 Zombie::~Zombie()
 {
-
+	std::cout << name << " has been destructed" << std::endl;
 }
 
 std::string	Zombie::GetName()
@@ -36,4 +37,3 @@ void	Zombie::Announce(void)
 {
 	std::cout << GetName() << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
-

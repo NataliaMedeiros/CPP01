@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   Zombie.hpp                                         :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/11/04 14:48:18 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 18:26:30 by natalia       ########   odam.nl         */
+/*   Created: 2024/11/04 14:25:49 by natalia       #+#    #+#                 */
+/*   Updated: 2024/11/04 18:35:16 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-int	main()
+#include <iostream>
+
+class Zombie
 {
-	Zombie*		heapZombie;
+	private:
+		std::string	name;
+	public:
+		Zombie();
+		~Zombie();
 
-	randomChump("Chump");
-	heapZombie = newZombie("heap");
-	heapZombie->Announce();
-	delete	heapZombie;
-	return (0);
-}
+		std::string	GetName();
+		std::string	SetName(std::string newName);
+		void		Announce(void);
+};
+
+Zombie*		newZombie(std::string name);
+void		randomChump( std::string name );
+Zombie*		zombieHorde( int N, std::string name );
+
+#endif
