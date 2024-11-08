@@ -1,4 +1,4 @@
-NAME = zombie
+NAME = zombieHorde
 
 SRC = Zombie.cpp main.cpp zombieHorde.cpp
 
