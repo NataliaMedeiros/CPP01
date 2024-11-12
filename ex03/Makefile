@@ -1,4 +1,4 @@
-NAME = Zombie
+NAME = zombieAttack
 
 SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 
