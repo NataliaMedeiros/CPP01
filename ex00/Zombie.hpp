@@ -6,7 +6,7 @@
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/04 14:25:49 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 18:22:05 by natalia       ########   odam.nl         */
+/*   Updated: 2024/11/12 15:42:14 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@ class Zombie
 		~Zombie();
 
 		std::string	GetName();
-		// std::string	SetName(std::string newName);
 		void		Announce(void);
 };
 

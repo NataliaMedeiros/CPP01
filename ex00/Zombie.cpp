@@ -6,7 +6,7 @@
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/04 14:40:01 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/04 18:24:31 by natalia       ########   odam.nl         */
+/*   Updated: 2024/11/12 15:43:35 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,6 @@ Zombie::~Zombie()
 std::string	Zombie::GetName()
 {
 	return(this->name);
-}
-
-std::string	Zombie::SetName(std::string newName)
-{
-	return(this->name = newName);
 }
 
 void	Zombie::Announce(void)
