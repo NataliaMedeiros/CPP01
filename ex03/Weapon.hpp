@@ -6,7 +6,7 @@
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/08 13:44:58 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/08 14:17:04 by natalia       ########   odam.nl         */
+/*   Updated: 2024/11/12 09:54:41 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,9 @@ class Weapon
 	public:
 		Weapon(const std::string type);
 		~Weapon();
+
 		const std::string&	getType() const;
-		void	setType(std::string type);
+		void	setType(std::string weaponType);
 };
 
 #endif

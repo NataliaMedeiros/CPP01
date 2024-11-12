@@ -6,7 +6,7 @@
 /*   By: natalia <natalia@student.42.fr>              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/08 13:44:51 by natalia       #+#    #+#                 */
-/*   Updated: 2024/11/08 14:14:59 by natalia       ########   odam.nl         */
+/*   Updated: 2024/11/12 09:41:35 by natalia       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ class  HumanA
 {
 	private:
 		std::string	name;
-		Weapon	weapon;
+		Weapon&	weapon;
 	public:
-		HumanA(std::string name, Weapon weapon);
+		HumanA(std::string name, Weapon& weapon);
 		~HumanA();
 		void	attack();
 };
