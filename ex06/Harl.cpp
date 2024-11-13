@@ -12,7 +12,7 @@
 
 #include "Harl.hpp"
 
-Harl::Harl(/* args */)
+Harl::Harl()
 {
 }
 
@@ -61,11 +61,4 @@ void Harl::complain(std::string level)
 			this->error();
 		break ;
 	}
-}
-
-bool	isLevelValid(std::string level)
-{
-	if (level == "DEBUG" || level == "INFO" || level == "WARNING" || level == "ERROR")
-		return (true);
-	return (false);
 }
