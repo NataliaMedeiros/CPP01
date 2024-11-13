@@ -16,9 +16,13 @@ int	main()
 {
 	Harl	harl;
 
+	std::cout << "-----DEBUG test-----" << std::endl;
 	harl.complain("DEBUG");
+	std::cout << "-----INFO test-----" << std::endl;
 	harl.complain("INFO");
+	std::cout << "-----WARNING test-----" << std::endl;
 	harl.complain("WARNING");
+	std::cout << "-----ERROR test-----" << std::endl;
 	harl.complain("ERROR");
 	return (0);
 }

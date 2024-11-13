@@ -12,12 +12,14 @@
 
 #include "Harl.hpp"
 
-Harl::Harl(/* args */)
+Harl::Harl()
 {
+	std::cout << "**Harl has been constructed" << std::endl;
 }
 
 Harl::~Harl()
 {
+	std::cout << "**Harl has been destructed" << std::endl;
 }
 
 void	Harl::debug(void)
