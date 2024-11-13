@@ -16,17 +16,22 @@
 
 int main()
 {
+	std::cout << GREEN << "-----Test HumanA-----" << RESET << std::endl;
 	Weapon club = Weapon("crude spiked club");
+
 	HumanA bob("Bob", club);
 	bob.attack();
 	club.setType("some other type of club");
 	bob.attack();
+	std::cout << std::endl;
 
+	std::cout << GREEN << "-----Test HumanB-----" << RESET << std::endl;
 	Weapon newClub = Weapon("crude spiked club");
+
 	HumanB jim("Jim");
 	jim.setWeapon(newClub);
 	jim.attack();
-	club.setType("some other type of club");
+	newClub.setType("some other type of club");
 	jim.attack();
 	return 0;
 }
