@@ -14,7 +14,7 @@
 
 Zombie*	newZombie(std::string name)
 {
-	Zombie* newZombie = new Zombie(name); // heap allocation
+	Zombie*	newZombie = new Zombie(name);
 
 	return (newZombie);
 }

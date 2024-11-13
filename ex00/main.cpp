@@ -20,7 +20,7 @@ freed (in this case we are using delete).
 */
 #include "Zombie.hpp"
 
-int	main()
+int	main(void)
 {
 	Zombie*		heapZombie;
 
