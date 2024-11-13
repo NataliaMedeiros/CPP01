@@ -21,13 +21,14 @@ bool	isStringReplaced(std::string fileName, std::string s1, std::string s2)
 	std::ifstream inFile(fileName);
 	if (!inFile.is_open())
 	{
-		std::cout << "Error to open: " << fileName << std::endl;
+		std::cout << YELLOW << "Error to open: " << fileName;
+		std::cout << " - please check if it is a valid file." << RESET << std::endl;
 		return (false);
 	}
 	std::ofstream outFile(fileName + ".replace");
 	if (!outFile.is_open())
 	{
-		std::cout << "Error to create: " << fileName << ".replace" << std::endl;
+		std::cout << YELLOW << "Error to create: " << fileName << ".replace" << RESET << std::endl;
 		return (false);
 	}
 	while (std::getline(inFile, line))

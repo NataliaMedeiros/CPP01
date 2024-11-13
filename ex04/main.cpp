@@ -20,9 +20,9 @@ int	main(int argc, char **argv)
 		std::string	s1 = argv[2];
 		std::string	s2 = argv[3];
 
-		if (s1.empty() || s2.empty())
+		if (fileName.empty() || s1.empty() || s2.empty())
 		{
-			std::cout << "Strings s1 and s2 cannot be empty" << std::endl;
+			std::cout << ORANGE << "Filename and Strings s1 and s2 cannot be empty" << RESET << std::endl;
 			return (1);
 		}
 		if (!isStringReplaced(fileName, s1, s2))
@@ -30,7 +30,7 @@ int	main(int argc, char **argv)
 	}
 	else
 	{
-		std::cout << "Check the arguments" << std::endl;
+		std::cout << ORANGE << "**Please check the arguments**" << RESET << std::endl;
 		return (1);
 	}
 	return (0);
